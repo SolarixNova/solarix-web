@@ -32,8 +32,8 @@ export default function Footer() {
         <Contato></Contato>
         <Rodape>
             <IconesRodape>
-                <a href=""><img width={40} src="../src/assets/github-brands-solid.svg" alt="" /></a>
-                <a href=""><img width={40} src="../src/assets/linkedin-brands-solid.svg" alt="" /></a>
+                <a href="https://github.com/SolarixNova/solarix-web"><img width={40} src="../src/assets/github-brands-solid.svg" alt="" /></a>
+                <a href="https://www.linkedin.com/in/mohamedafif/"><img width={40} src="../src/assets/linkedin-brands-solid.svg" alt="" /></a>
             </IconesRodape>
         <Copyright>&copy; 2024 Solarix. Todos os direitos reservados.</Copyright>
         </Rodape>
