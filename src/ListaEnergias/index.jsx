@@ -1,5 +1,12 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
+import biomassa from "../assets/biomassa.jpg"
+import eolica from "../assets/eolica.jpg"
+import geotermica from "../assets/geotermica.webp"
+import hidreletrica from "../assets/hidreletrica.jpg"
+import ondas from "../assets/ondas.webp"
+import solar from "../assets/solar.jpg"
+
 
 const Lista = styled.main`
   font-family: "Space Grotesk", sans-serif;
@@ -209,7 +216,7 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/eolica.jpg"
+          src={eolica}
           alt="Usina eolica foto"
         />
         <div class="card-conteudo">
@@ -224,7 +231,7 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/solar.jpg"
+          src={solar}
           alt="Foto de uma usina eólica"
         />
         <div class="card-conteudo">
@@ -239,7 +246,7 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/hidreletrica.jpg"
+          src={hidreletrica}
           alt="Foto de uma usina eólica"
         />
         <div class="card-conteudo">
@@ -254,8 +261,8 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/biomassa.jpg"
-          alt="Foto de uma usina eólica"
+          src={biomassa}
+          alt="biomassa"
         />
         <div class="card-conteudo">
           <div class="card-secao">
@@ -269,7 +276,7 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/geotermica.webp"
+          src={geotermica}
           alt="Foto de uma usina eólica"
         />
         <div class="card-conteudo">
@@ -284,7 +291,7 @@ export default function ListaEnergias() {
       <article class="card">
         <img
           class="card-fundo"
-          src="../src/assets/ondas.webp"
+          src={ondas}
           alt="Foto de uma usina eólica"
         />
         <div class="card-conteudo">
