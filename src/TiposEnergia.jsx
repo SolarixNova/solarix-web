@@ -40,10 +40,11 @@ const Tipos = styled.div`
 
     @media (max-width:580px) {
       width:15rem;
+      overflow-y:scroll;
     }
     
     &:hover {
-      max-height: 30rem; 
+      max-height: 30rem;
     }
 
     h2 {

@@ -1,12 +1,10 @@
 import styled from "styled-components"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import painelhero from "../assets/painelhero.jpeg"
 
 
 const Header = styled.header`
-
     height: 100vh;
+    padding-bottom: 100px;
     @media (max-width: 400px) {
         height: 30vh;
     }
@@ -15,14 +13,26 @@ const Header = styled.header`
     }
     @media (max-width:800px) {
         height: 60vh;
+        padding-bottom: 300px;
     }
     @media (max-width:600px) {
-      height: 40vh;
+        height: 40vh;
+        padding-bottom: 420px;
     }
 `
 
+const BackgroundImage = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+`
+
 const Titulo = styled.h1`
-    color: var(--cor-verde-sec);
+    color: var(--cor-branca);
     font-size:2em;
     display: inline-block;
     font-family: monospace;
@@ -69,29 +79,25 @@ const Links = styled.div`
     flex-wrap: wrap;
     a {
         text-decoration:none;
-        color: var(--cor-verde-sec);
+        color: var(--cor-branca);
         font-size:20px;
     }
 `
 
-const Aba = styled.a`
-    text-decoration: none;
-    font-size: 23px;
-    color: #FFFFFF;
-`
+
 
 const Botao = styled.button`
     font-size: 23px;
     padding: 1.2rem;
     border-radius: 40px;
-    background-color: var(--cor-verde-sec);
+    background-color: var(--cor-branca);
     border: none;
     cursor: pointer;
     &:hover {
         background-color: transparent;
-        border: var(--cor-verde-sec) solid 1px;
+        border: var(--cor-branca) solid 1px;
         transition: .7s;
-        color: var(--cor-verde-sec);
+        color: var(--cor-branca);
     }
     @media (max-width: 1050px) {
         display: none;
@@ -101,7 +107,7 @@ const Botao = styled.button`
 const Secao = styled.section`
     text-align: center;
     margin-top: 8rem;
-    color: var(--cor-verde-sec);
+    color: var(--cor-branca);
     h1 {
         font-size: 65px;
     }
@@ -123,7 +129,7 @@ const Secao = styled.section`
     }
     button {
         padding: 1rem;
-        background-color: var(--cor-verde-sec);
+        background-color: var(--cor-branca);
         border: none;
         border-radius: 60px;
         width: 20rem;
@@ -132,9 +138,9 @@ const Secao = styled.section`
         cursor: pointer;
         &:hover {
             background-color: transparent;
-            border: var(--cor-verde-sec) solid 1px;
+            border: var(--cor-branca) solid 1px;
             transition: .7s;
-            color: var(--cor-verde-sec);
+            color: var(--cor-branca);
         }
     @media (max-width: 1050px) {
         display: none;
@@ -146,6 +152,7 @@ const Secao = styled.section`
 export default function Cabecalho() {
     return (
         <Header id="home">
+            <BackgroundImage src={painelhero} alt="Background" />
             <Nav>
                 <div>
                     <Titulo>Solarix</Titulo>
