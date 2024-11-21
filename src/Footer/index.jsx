@@ -1,5 +1,7 @@
 import Contato from "../Contato";
 import styled from "styled-components";
+import GitHubIcon from "../assets/github-brands-solid.svg";
+import LinkedinIcon from "../assets/linkedin-brands-solid.svg";
 
 const Rodape = styled.footer`
     display:flex;
@@ -32,8 +34,8 @@ export default function Footer() {
         <Contato></Contato>
         <Rodape>
             <IconesRodape>
-                <a href="https://github.com/SolarixNova/solarix-web"><img width={40} src="../src/assets/github-brands-solid.svg" alt="" /></a>
-                <a href="https://www.linkedin.com/in/mohamedafif/"><img width={40} src="../src/assets/linkedin-brands-solid.svg" alt="" /></a>
+                <a href="https://github.com/SolarixNova/solarix-web"><img width={40} src={GitHubIcon} alt="" /></a>
+                <a href="https://www.linkedin.com/in/mohamedafif/"><img width={40} src={LinkedinIcon} alt="" /></a>
             </IconesRodape>
         <Copyright>&copy; 2024 Solarix. Todos os direitos reservados.</Copyright>
         </Rodape>
