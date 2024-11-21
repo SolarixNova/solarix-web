@@ -79,7 +79,7 @@ const BotaoEnviar = styled.button`
 
 export default function Contato() {
     return(
-        <Secao>
+        <Secao id="contato">
             <Infos>
             <Titulo>Solarix</Titulo>
             <h4>Grandes negócios <br />de sustentabilidade</h4>

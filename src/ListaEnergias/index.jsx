@@ -201,7 +201,7 @@ const BotaoEnergias = styled.button`
 export default function ListaEnergias() {
   return (
     <>
-    <ApresentacaoTitulo>
+    <ApresentacaoTitulo id="energias">
     <Titulo>Energias Renováveis</Titulo>
     <Link to="/tipos-energia"><BotaoEnergias>Veja Detalhes</BotaoEnergias></Link>
     </ApresentacaoTitulo>

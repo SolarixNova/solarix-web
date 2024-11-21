@@ -146,7 +146,7 @@ const Secao = styled.section`
 
 export default function Cabecalho() {
     return (
-        <Header>
+        <Header id="home">
             <Nav>
                 <div>
                     <Titulo>Solarix</Titulo>
