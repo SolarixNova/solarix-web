@@ -1,12 +1,11 @@
 import styled from "styled-components"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import painelhero from "../assets/painelhero.jpeg"
 
 
 const Header = styled.header`
-    background-image: url(../src/assets/painelhero.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+
     height: 100vh;
     @media (max-width: 400px) {
         height: 30vh;
@@ -23,7 +22,7 @@ const Header = styled.header`
 `
 
 const Titulo = styled.h1`
-    color: var(--cor-branca);
+    color: var(--cor-verde-sec);
     font-size:2em;
     display: inline-block;
     font-family: monospace;
@@ -70,7 +69,7 @@ const Links = styled.div`
     flex-wrap: wrap;
     a {
         text-decoration:none;
-        color: white;
+        color: var(--cor-verde-sec);
         font-size:20px;
     }
 `
@@ -85,14 +84,14 @@ const Botao = styled.button`
     font-size: 23px;
     padding: 1.2rem;
     border-radius: 40px;
-    background-color: #FFFFFF;
+    background-color: var(--cor-verde-sec);
     border: none;
     cursor: pointer;
     &:hover {
         background-color: transparent;
-        border: white solid 1px;
+        border: var(--cor-verde-sec) solid 1px;
         transition: .7s;
-        color: white;
+        color: var(--cor-verde-sec);
     }
     @media (max-width: 1050px) {
         display: none;
@@ -102,7 +101,7 @@ const Botao = styled.button`
 const Secao = styled.section`
     text-align: center;
     margin-top: 8rem;
-    color: #FFFFFF;
+    color: var(--cor-verde-sec);
     h1 {
         font-size: 65px;
     }
@@ -124,7 +123,7 @@ const Secao = styled.section`
     }
     button {
         padding: 1rem;
-        background-color: white;
+        background-color: var(--cor-verde-sec);
         border: none;
         border-radius: 60px;
         width: 20rem;
@@ -133,9 +132,9 @@ const Secao = styled.section`
         cursor: pointer;
         &:hover {
             background-color: transparent;
-            border: #FFFFFF solid 1px;
+            border: var(--cor-verde-sec) solid 1px;
             transition: .7s;
-            color: #ffffff;
+            color: var(--cor-verde-sec);
         }
     @media (max-width: 1050px) {
         display: none;
@@ -161,7 +160,7 @@ export default function Cabecalho() {
             <Secao>
             <h1>Construindo um mundo sustentável <br /> com soluções <span class="animacao-global">globais</span></h1>
             <p>Somos uma organização que visa o foco em fontes <br /> sustentáveis, em especial a Solar.</p>
-            <a href="#energia"><button>Veja mais</button></a>
+            <a href="#energias"><button>Veja mais</button></a>
             </Secao>
         </Header>
     )
