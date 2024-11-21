@@ -7,6 +7,7 @@ const Rodape = styled.footer`
     justify-content:space-between;
     margin: 0 5rem;
     margin-bottom:2rem;
+    flex-wrap:wrap;
 `
 
 const Copyright = styled.p`
