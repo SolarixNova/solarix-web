@@ -68,6 +68,11 @@ const Links = styled.div`
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
+    a {
+        text-decoration:none;
+        color: white;
+        font-size:20px;
+    }
 `
 
 const Aba = styled.a`
@@ -147,8 +152,9 @@ export default function Cabecalho() {
                     <Titulo>Solarix</Titulo>
                 </div>
                 <Links>
-                    <Link to="/">Home</Link>
-                    <Link to="/tipos-energia">Tipos</Link>
+                    <a href="#home">Home</a>
+                    <a href="#energias">Energias</a>
+                    <a href="#contato">Contato</a>
                 </Links>
                 <Botao>Vamos Salvar o Mundo</Botao>
             </Nav>
