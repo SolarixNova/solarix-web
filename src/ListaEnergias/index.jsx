@@ -169,6 +169,8 @@ const ApresentacaoTitulo = styled.div`
   display:flex;
   align-items:center;
   margin:5rem 5rem 0 5rem;
+  flex-wrap: wrap;
+  gap:3rem;
 `
 
 const BotaoEnergias = styled.button`
@@ -186,6 +188,10 @@ const BotaoEnergias = styled.button`
     transition: .7s;
     border: var(--cor-verde-sec) 1px solid;
     color: var(--cor-verde-sec);
+  }
+
+  @media (max-width:420px) {
+    width:15rem;
   }
 `
 

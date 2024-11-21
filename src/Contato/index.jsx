@@ -7,6 +7,19 @@ const Secao = styled.section`
         "titulo-contato negocios sobrenos faleconosco email"
     ;
     font-size:20px;
+    @media (max-width:1300px) {
+
+    .tirar {
+        display:none;
+    }
+    }
+
+    @media (max-width:670px) {
+    grid-template-areas:
+        "titulo-contato"
+        "email";
+    gap: 5rem;
+}
 `
 
 const Infos = styled.div`
@@ -16,6 +29,7 @@ const Infos = styled.div`
     form {
         display:flex;
         gap: 0.5rem;
+        flex-wrap:wrap;
     }
     input {
         width: 20rem;
@@ -70,21 +84,21 @@ export default function Contato() {
             <Titulo>Solarix</Titulo>
             <h4>Grandes negócios <br />de sustentabilidade</h4>
             </Infos>
-            <Infos>
+            <div class="tirar">
             <Subtitulo>Soluções</Subtitulo>
             <Links><a href=""><p>Python</p></a></Links> 
             <Links><a href=""><p>Edge</p></a></Links>
-            </Infos>
-            <Infos>
+            </div>
+            <div class="tirar">
             <Subtitulo>A Solarix</Subtitulo>
             <Links><a href=""><p>HUB</p></a></Links>
             <Links><a href=""><p>Sobre nós</p></a></Links>
-            </Infos>
-            <Infos>
+            </div>
+            <div class="tirar">
             <LinksContato><a href=""><h2>Fale conosco</h2></a></LinksContato>
             <LinksContato><a href=""><h2>Trabalhe Conosco</h2></a></LinksContato>
             <LinksContato><a href=""><h2>Política de privacidade</h2></a></LinksContato>
-            </Infos>
+            </div>
             <Infos>
             <Subtitulo>Entre em contato com nós</Subtitulo>
             <p>Caso queira falar com nós, insira seu e-mail abaixo</p>

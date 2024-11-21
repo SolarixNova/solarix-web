@@ -9,7 +9,22 @@ const Tipos = styled.div`
   grid-template-areas: 
     "1 2 3" 
     "4 5 6";
-    
+  @media (max-width:1390px) {
+    grid-template-areas:
+    "1 2"
+    "3 4"
+    "5 6";
+  }
+  @media (max-width:920px) {
+    grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6";
+  }
+
   div {
     width: 30rem;
     background-color: #8dc9a4;
@@ -22,6 +37,10 @@ const Tipos = styled.div`
     overflow: hidden; 
     transition: max-height 1.5s ease-in-out; 
     cursor: pointer;
+
+    @media (max-width:580px) {
+      width:15rem;
+    }
     
     &:hover {
       max-height: 30rem; 
@@ -58,6 +77,8 @@ const TitulosEnergias = styled.div`
   align-items:center;
   justify-content:space-between;
   margin:5rem 5rem 0rem 5rem;
+  flex-wrap:wrap;
+  gap: 3rem;
 `
 
 const Titulo = styled.h5`
